@@ -27,6 +27,7 @@ namespace NucCheck
             if (_comparerService != null) { _comparerService.KillThread(); } // If the comparer thread is running we kill the thread, because we create every time a new panel instance.
             _comparerService = null;
             Program.getInstance()._comparerPanel = null;
+            Program.getInstance().comparerPanelHidden = false;
         }
 
         private void emailSettingsBttn_Click(object sender, EventArgs e)
